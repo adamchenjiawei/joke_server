@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'joke'
+set :application, 'joke_server'
 set :repo_url, 'git@github.com:adamchenjiawei/joke_server.git'
 
 # Default branch is :master
@@ -20,7 +20,6 @@ set :log_level, :info
 
 # Default value for :pty is false
 # set :pty, true
-set(:config_files, %w{database.yml})
 
 # Default value for :linked_files is []
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
