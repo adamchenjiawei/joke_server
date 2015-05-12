@@ -1,1 +1,1 @@
-server '123.56.117.99', user: 'root', roles: %w{web app db}
+server 'infhaps.com', user: 'root', roles: %w{web app db}
